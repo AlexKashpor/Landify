@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
 a {
@@ -21,21 +21,27 @@ li {
     list-style-type: none;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
-    width: 1100px;
     max-width: 1100px;
     margin: 0 auto;
 }
 
 header {
     width: 100%;
-    height: 866px;
+    height: 100%;
     background-image: url(/img/Background.jpg);
-    background-size: cover;
-    background-position: 10% 80%;
+    background-size: contain;
+    background-position: 50% -5%;
+    background-repeat: no-repeat;
 
     nav {
-
+        padding-top: 16px;
+        margin-bottom: 100px;
 
         .nav__navbar {
             display: flex;
@@ -43,15 +49,15 @@ header {
             justify-content: space-between;
             align-items: flex-end;
             height: 40px;
-            // margin-bottom: 212px;
 
             .nav__list {
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-between;
                 width: 570px;
+
                 li {
-                    
+
                     a {
                         @include font('Manrope', 14px, 700, 20px, #18191F);
                     }
@@ -66,29 +72,79 @@ header {
             }
         }
     }
-    main{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        .main__leftBox{
-            h1{
-                @include font('Manrope', 72px, 800, 98px, #18191F);
+
+    main {
+
+
+        section {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+
+            .main__leftBox {
+                h1 {
+                    @include font('Manrope', 72px, 800, 98px, #18191F);
+                }
+
+                .main__button {
+                    @include font('Manrope', 20px, 700, 30px, #FFFFFF);
+                    background-color: #8C30F5;
+                    border: none;
+                    padding: 16px 41px;
+                    border-radius: 10px;
+                    margin-top: 32px;
+                }
             }
-            .main__button{
-                @include font('Manrope', 20px, 700, 30px, #FFFFFF);
-                background-color: #8C30F5;
-                border: none;
-                padding: 16px 41px;
-                border-radius: 10px;
-                margin-top: 32px;
+
+            .main__mobile {
+                width: 320px;
+                height: 640px;
+                background: url('/img/Phone Mockup.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-bottom: 50px;
             }
         }
-        .main__mobile{
-            width: 280px;
-            height: 640px;
-            background: url('/img/Phone Mockup.png');
-            background-size: contain;
-            background-repeat: no-repeat;
+
+        .main__navComp {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            max-width: 890px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            padding: 42px 0;
+            border-top: 1px solid rgba($color: #abc2e4, $alpha: 0.4);
+            border-bottom: 1px solid rgba($color: #abc2e4, $alpha: 0.4);
+
+        }
+    }
+}
+.realStories{
+    background-color: #D5FAFC;
+    width: 100%;
+    .realStories__box1{
+        .realStories__h1{
+            @include font('Manrope', 48px, 800, 64px, #18191F);
+        }
+        .realStories__p{
+            @include font('Manrope', 18px, 400, 32px, #18191F);
+        }
+    }
+    .realStories__hubspot{
+        width: 350px;
+        // height: 436px;
+        background-color: #fff;
+        p{
+            padding: 32px;
+            @include font('Manrope', 18px, 400, 32px, #18191F);
+        }
+        h6{
+            @include font('Manrope', 18px, 800, 28px, #18191F);
+        }
+        .realStories__paragraph{
+            @include font('Manrope', 14px, 500, 24px,#969BAB );
         }
     }
 }
