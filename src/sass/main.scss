@@ -31,6 +31,15 @@ h1 {
     margin: 0 auto;
 }
 
+.container2 {
+    max-width: 920px;
+    margin: 0 auto;
+}
+.container3{
+    max-width: 1095px;
+    margin: 0 auto;
+}
+//header
 header {
     width: 100%;
     height: 100%;
@@ -121,30 +130,178 @@ header {
         }
     }
 }
-.realStories{
+
+//realStories
+.realStories {
     background-color: #D5FAFC;
     width: 100%;
-    .realStories__box1{
-        .realStories__h1{
-            @include font('Manrope', 48px, 800, 64px, #18191F);
+    padding-bottom: 78px;
+
+    .container2 {
+        display: flex;
+        flex-flow: row wrap;
+
+
+        .realStories__box1 {
+            order: 1;
+
+            .realStories__h1 {
+                @include font('Manrope', 48px, 800, 64px, #18191F);
+                margin-top: 113px;
+                padding-right: 40px;
+                margin-right: 29px;
+            }
+
+            .realStories__p {
+                @include font('Manrope', 18px, 400, 32px, #18191F);
+            }
         }
-        .realStories__p{
-            @include font('Manrope', 18px, 400, 32px, #18191F);
+
+        .realStories__hubspot {
+            max-width: 350px;
+            background-color: #fff;
+            border-radius: 7px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            order: 3;
+            margin-right: 30px;
+            margin-left: 93px;
+            margin-top: -250px;
+            height: 470px;
+
+            img {
+                margin-left: 32px;
+                margin-top: 32px;
+                margin-bottom: 37px;
+            }
+
+            .realStories__content {
+                max-width: 254px;
+                margin-right: 32px;
+                margin-left: 64px;
+                position: relative;
+
+                .realStories__paragraph {
+                    margin-bottom: 35px;
+                    @include font('Manrope', 18px, 400, 32px, #18191F);
+                    
+                }
+
+                .realStories__paragraph::before {
+                    content: url('/img/Page 1.svg');
+                    position: absolute;
+                    left: -28px;
+                }
+
+                h6 {
+                    @include font('Manrope', 18px, 800, 28px, #18191F);
+                }
+
+                .realStories__p {
+                    @include font('Manrope', 14px, 400, 24px, #969BAB);
+                    // padding-bottom: 35px;
+                }
+            }
+
+
+        }
+
+        .realStories__airbnb {
+            max-width: 445px;
+            background-color: #fff;
+            border-radius: 7px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            order: 2;
+            margin-top: 164px;
+            margin-bottom: 40px;
+
+            img {
+                margin-left: 32px;
+                margin-top: 32px;
+                margin-bottom: 37px;
+            }
+
+            .realStories__content {
+                max-width: 350px;
+                margin-right: 32px;
+                margin-left: 64px;
+                position: relative;
+
+                .realStories__paragraph {
+                    @include font('Manrope', 18px, 400, 32px, #18191F);
+                    margin-bottom: 35px;
+                }
+                .realStories__paragraph::before {
+                    content: url('/img/Page 1.svg');
+                    position: absolute;
+                    left: -28px;
+                }
+
+                h6 {
+                    @include font('Manrope', 18px, 800, 28px, #18191F);
+                }
+
+                .realStories__p {
+                    @include font('Manrope', 14px, 400, 24px, #969BAB);
+                    padding-bottom: 35px;
+                }
+            }
+        }
+
+        .realStories__bookmyshow {
+            max-width: 350px;
+            background-color: #fff;
+            border-radius: 7px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            order: 4;
+
+            img {
+                margin-left: 32px;
+                margin-top: 32px;
+                margin-bottom: 37px;
+            }
+
+            .realStories__content {
+                max-width: 254px;
+                margin-right: 32px;
+                margin-left: 64px;
+                position: relative;
+
+                .realStories__paragraph {
+                    margin-bottom: 35px;
+                    @include font('Manrope', 18px, 400, 32px, #18191F);
+                }
+                .realStories__paragraph::before {
+                    content: url('/img/Page 1.svg');
+                    position: absolute;
+                    left: -28px;
+                }
+
+                h6 {
+                    @include font('Manrope', 18px, 800, 28px, #18191F);
+                }
+
+                .realStories__p {
+                    @include font('Manrope', 14px, 400, 24px, #969BAB);
+                    padding-bottom: 35px;
+                }
+            }
         }
     }
-    .realStories__hubspot{
-        width: 350px;
-        // height: 436px;
-        background-color: #fff;
-        p{
-            padding: 32px;
-            @include font('Manrope', 18px, 400, 32px, #18191F);
-        }
-        h6{
-            @include font('Manrope', 18px, 800, 28px, #18191F);
-        }
-        .realStories__paragraph{
-            @include font('Manrope', 14px, 500, 24px,#969BAB );
+}
+
+//tailorMade
+.tailorMade{
+    .tailorMade__h1{
+        @include font('Manrope', 48px, 800, 64px,#18191F );
+    }
+    .tailorMade__p{
+        @include font('Manrope', 18px, 400, 32px,#18191F );
+    }
+    .tailorMade__boxes{
+        display: flex;
+        flex-flow: row wrap;
+        .tailorMade__box{
+            max-width: 340px;
         }
     }
 }
