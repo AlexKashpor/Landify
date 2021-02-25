@@ -449,3 +449,104 @@ header {
         background-position: center;
     }
 }
+//Manage
+.Manage{
+    max-width: 100%;
+    background-image: url(../img/ManageBack.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .Manage__box{
+        max-width: 540px;
+        
+        .Manage__title{
+            @include font('Manrope', 48px, 800, 64px,#18191F );
+            padding-top: 68px;
+        }
+        .Manage__paragraph{
+            @include font('Manrope', 18px, 400, 32px, #18191F );
+            margin-bottom: 48px;
+        }
+        .Manage__App{
+            @include font('Manrope', 18px, 500, 28px, #18191F );
+            margin-bottom: 8px;
+        }
+        .Manage__buttonsApp{
+            padding-bottom: 68px;
+            img:first-child{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+//footer
+footer{
+    background-color: #0B0D17;
+    max-width: 100%;
+    padding-top: 56px;
+
+    .container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .footer__infoBox{
+            .footer__logo{
+                // margin-top: 56px;
+                margin-bottom: 24px;
+            }
+            .footer__list1{
+                display: flex;
+                flex-flow: row wrap;
+                margin-bottom: 12px;
+                li{
+                    a{
+            @include font('Manrope', 16px, 400, 26px, #FFFFFF);
+                        
+                    }
+                    a:first-child{
+                        margin-right: 24px;
+                    }
+                    
+                }
+            }
+            .footer__list2{
+                display: flex;
+                flex-flow: row wrap;
+                margin-bottom: 24px;
+                li{
+                    a{
+                        @include font('Manrope', 16px, 400, 26px, #FFFFFF);  
+                        margin-right: 24px;
+                    }
+                    // a:nth-child(2){
+                    //     margin-right: 0;
+                    // }
+                }
+            }
+            .footer__reserved{
+                @include font('Manrope', 14px, 400, 24px, #D9DBE1);
+                margin-bottom: 56px;
+            }
+        }
+        .footer__appBox{
+            display: flex;
+            flex-flow: column nowrap;
+            .footer__getTheApp{
+                @include font('Manrope', 18px, 500, 28px, #D9DBE1);
+                margin-bottom: 16px;
+            }
+            img[alt="appStore"]{
+                margin-bottom: 16px;
+            }
+            img{
+                cursor: pointer;
+            }
+            img:hover{
+                opacity: 0.8;
+                transition: .2s ease-in;
+            }
+        }
+    }
+
+
+}
