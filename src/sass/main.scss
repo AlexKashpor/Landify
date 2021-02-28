@@ -73,11 +73,19 @@ header {
                         @include font('Manrope', 14px, 700, 20px, #18191F);
                     }
                 }
+                li:hover{
+                    opacity: 0.6;
+                    transition: .2s ease-in;
+                }
             }
 
             .nav__mobileApp {
                 a:nth-child(2) {
                     margin-left: 12px;
+                }
+                a:hover{
+                    opacity: 0.6;
+                    transition: .2s ease-in;
                 }
 
             }
@@ -105,6 +113,11 @@ header {
                     border-radius: 10px;
                     margin-top: 32px;
                 }
+                .main__button:hover{
+                    opacity: 0.6;
+                    transition: .2s ease-in;
+                    cursor: pointer;
+                }
             }
 
             .main__mobile {
@@ -128,7 +141,10 @@ header {
             padding: 42px 0;
             border-top: 1px solid rgba($color: #abc2e4, $alpha: 0.4);
             border-bottom: 1px solid rgba($color: #abc2e4, $alpha: 0.4);
-
+            li:hover{
+                opacity: 0.8;
+                transition: .2s ease-in;
+            }
         }
     }
 }
@@ -164,7 +180,6 @@ header {
             max-width: 350px;
             background-color: #fff;
             border-radius: 7px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             order: 3;
             margin-right: 30px;
             margin-left: 93px;
@@ -207,12 +222,19 @@ header {
 
 
         }
+        .realStories__hubspot:hover, 
+        .realStories__airbnb:hover,
+        .realStories__bookmyshow:hover
+        {
+            opacity: 0.8;
+            transition: .2s ease-in;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
 
         .realStories__airbnb {
             max-width: 445px;
             background-color: #fff;
             border-radius: 7px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             order: 2;
             margin-top: 164px;
             margin-bottom: 40px;
@@ -255,7 +277,6 @@ header {
             max-width: 350px;
             background-color: #fff;
             border-radius: 7px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             order: 4;
 
             img {
@@ -417,6 +438,10 @@ header {
         .headline__getstarted{
             @include font('Manrope', 20px, 700, 30px, #8C30F5);
         }
+        .headline__getstarted:hover{
+            opacity: 0.8;
+            transition: .2s ease-in;
+        }
         .headline__getstarted::after{
             content: url('/img/arrow.svg');
             margin-left: 10px;
@@ -476,7 +501,12 @@ header {
             img:first-child{
                 margin-right: 10px;
             }
+            a:hover{
+                opacity: 0.8;
+                transition: .2s ease-in;
+            }
         }
+
     }
 }
 //footer
@@ -508,6 +538,10 @@ footer{
                     }
                     
                 }
+                li:hover{
+                    opacity: 0.8;
+                    transition: .2s ease-in;
+                }
             }
             .footer__list2{
                 display: flex;
@@ -521,6 +555,10 @@ footer{
                     // a:nth-child(2){
                     //     margin-right: 0;
                     // }
+                }
+                li:hover{
+                    opacity: 0.8;
+                    transition: .2s ease-in;
                 }
             }
             .footer__reserved{
