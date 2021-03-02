@@ -588,3 +588,158 @@ footer{
 
 
 }
+@media screen and (min-width: 320px) and (max-width: 425px){
+    header{
+        padding-left: 5px;
+        padding-right: 5px;
+        .container{
+            nav{
+                .nav__navbar{
+                    .nav__list{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .nav__mobileApp{
+                        display: none;
+                    }
+                }
+            }
+            main{
+                section{
+                    .main__leftBox{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        h1{
+                            font-size: 2.1em;
+                        }
+                        .main__button{
+                            margin-top: 0;
+                        }
+                    }
+                    .main__mobile{
+                        margin-bottom: 0;
+                    }
+                }
+                .main__navComp{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 5%;
+                    padding-top: 5%;
+                    margin-bottom: 0;
+                    li{
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    // realStories
+    .realStories{
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-bottom: 5%;
+        margin-bottom: 0;
+        width: 100%;
+        .container2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .realStories__box1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 5%;
+                .realStories__h1{
+                    font-size: 2.1em;
+                    margin-right: 0;
+                    margin-top: 0;
+                    padding-right: 0;
+
+                }
+            }
+            .realStories__airbnb{
+                margin-top: 0;
+                width: 90%;
+                // padding-bottom: 5%;
+                margin-bottom: 5%;
+            }
+            .realStories__hubspot{
+                width: 90%;
+                margin: 0;
+                // padding-bottom: 5%;
+                margin-bottom: 5%;
+                .realStories__content{
+                    margin-left: 35px;
+                }
+            }
+            .realStories__bookmyshow{
+                width: 90%;
+                margin: 0;
+                // padding-bottom: 5%;
+                margin-bottom: 5%;
+            }
+        }
+    }
+    // tailorMade
+    .tailorMade{
+        width: 100%;
+        padding-right:5px;
+        padding-left: 5px;
+        margin-bottom: 0;
+        .container3{
+            // width: 100%;
+            .tailorMade__h1{
+                font-size: 3em;
+            }
+            .tailorMade__p{
+                font-size: 1em;
+            }
+            .tailorMade__box{
+                margin-bottom: 5%;
+                margin-right: 0;
+            }
+        }
+    }
+    // ourYears
+    .ourYears{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 0;
+        .ourYears__box1{
+            margin-bottom: 5%;
+            
+            h2{
+                font-size: 2.5em;
+            }
+        }
+        .ourYears__box2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5%;
+        }
+    }
+    //headline
+    .headline{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        .headline__img{
+            max-width: 100%;
+            margin-bottom: 5%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .headline__info{
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+    }
+}
